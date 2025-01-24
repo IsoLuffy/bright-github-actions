@@ -1,4 +1,4 @@
-- name: Scan Start
+name: Scan Start
 on:  
   workflow_dispatch: 
   jobs:
