@@ -1,0 +1,8 @@
+- name: Scan Start
+        id: start
+        uses: NeuraLegion/run-scan@release
+        with:
+          api_token: ${{ secrets.ISAH_BRIGHTTOKEN }}
+          hostname: app.brightsec.com
+          name: Isah Bright Scan - ${{ github.sha }}
+          restart_scan: aYyfuozNC5FEJUxta6Q57L
