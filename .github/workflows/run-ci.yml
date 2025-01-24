@@ -11,6 +11,6 @@ jobs:
         uses: NeuraLegion/run-scan@v1
         with:
           api_token: ${{ secrets.ISAH_BRIGHTTOKEN }}
-          hostname: app.brightsec.com
           name: Isah Bright Scan - ${{ github.sha }}
           restart_scan: aYyfuozNC5FEJUxta6Q57L
+          hostname: app.brightsec.com
