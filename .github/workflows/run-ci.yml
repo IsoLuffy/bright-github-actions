@@ -1,6 +1,12 @@
 - name: Scan Start
-        id: start
-        uses: NeuraLegion/run-scan@release
+on:  
+  workflow_dispatch: 
+  jobs:
+  run-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run NeuraLegion Scan
+        uses: NeuraLegion/run-scan@v1
         with:
           api_token: ${{ secrets.ISAH_BRIGHTTOKEN }}
           hostname: app.brightsec.com
