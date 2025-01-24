@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run NeuraLegion Scan
-        uses: NeuraLegion/run-scan@v1
+        uses: NeuraLegion/run-scan@v1.1
         with:
           api_token: ${{ secrets.ISAH_BRIGHTTOKEN }}
           name: Isah Bright Scan - ${{ github.sha }}
